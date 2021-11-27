@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name STM32L053R6T6)(type Legacy)(uri ${KIPRJMOD}/Parts/STM32L053R6T6/STM32L053R6T6.lib)(options "")(descr ""))
+  (lib (name micro_usb)(type Legacy)(uri ${KIPRJMOD}/Parts/Micro_USB/micro_usb.lib)(options "")(descr ""))
+  (lib (name CDBHD140L-G)(type Legacy)(uri ${KIPRJMOD}/Parts/CDBHD140L-G/CDBHD140L-G.lib)(options "")(descr ""))
+  (lib (name F24-100-C2)(type Legacy)(uri "${KIPRJMOD}/Parts/F24-100-C2 /F24-100-C2.lib")(options "")(descr ""))
+  (lib (name SPDT_Reflow)(type Legacy)(uri ${KIPRJMOD}/Parts/SPDT/SPDT_Reflow.lib)(options "")(descr ""))
+)

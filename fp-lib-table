@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name F24-100-C2)(type KiCad)(uri "${KIPRJMOD}/Parts/F24-100-C2 /F24-100-C2.pretty")(options "")(descr ""))
+  (lib (name SPDT)(type KiCad)(uri ${KIPRJMOD}/Parts/SPDT.pretty)(options "")(descr ""))
+)
