@@ -1,5 +1,6 @@
 # Solder Reflow Oven
 ![GitHub](https://img.shields.io/github/license/1sand0s/Solder_Reflow_Oven_2.0)
+![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/1sand0s/Solder_Reflow_Oven_2.0?include_prereleases)
  
 <h1> What is it ? </h1>
 A homebrew solder reflow oven controller designed around an STM32L053 series MCU with PCB layouting done in Kicad. A solder reflow oven is a device used to 
