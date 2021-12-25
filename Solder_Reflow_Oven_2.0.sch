@@ -485,8 +485,6 @@ Wire Wire Line
 	5800 5700 5750 5700
 Wire Notes Line
 	5100 5100 8200 5100
-Wire Notes Line
-	8200 6550 5100 6550
 Text Notes 5100 5100 0    118  ~ 0
 USB Network
 $Comp
@@ -797,15 +795,13 @@ Wire Wire Line
 Connection ~ 6050 2050
 Wire Wire Line
 	6050 2050 6750 2050
-Text GLabel 7650 1700 2    50   Input ~ 0
+Text GLabel 7950 1700 2    50   Input ~ 0
 VDD_3.3
-Text GLabel 7650 2050 2    50   Input ~ 0
+Text GLabel 7950 2050 2    50   Input ~ 0
 VSS
 Connection ~ 6750 2050
-Wire Wire Line
-	7650 1350 7250 1350
 Connection ~ 6750 1350
-Text GLabel 7650 1350 2    50   Input ~ 0
+Text GLabel 7950 1350 2    50   Input ~ 0
 VDD_10
 $Comp
 L Regulator_Linear:LM317_TO39 U1
@@ -818,43 +814,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 6050 1350 50  0001 C CNN
 	1    6050 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R4
-U 1 1 61DC6952
-P 7250 1500
-F 0 "R4" H 7320 1546 50  0000 L CNN
-F 1 "2k" H 7320 1455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7180 1500 50  0001 C CNN
-F 3 "~" H 7250 1500 50  0001 C CNN
-	1    7250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 61DC6F6E
-P 7250 1850
-F 0 "R5" H 7320 1896 50  0000 L CNN
-F 1 "1k" H 7320 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7180 1850 50  0001 C CNN
-F 3 "~" H 7250 1850 50  0001 C CNN
-	1    7250 1850
-	1    0    0    -1  
-$EndComp
-Connection ~ 7250 1350
-Wire Wire Line
-	7250 1350 6750 1350
-Wire Wire Line
-	6750 2050 7250 2050
-Wire Wire Line
-	7250 2000 7250 2050
-Connection ~ 7250 2050
-Wire Wire Line
-	7250 2050 7650 2050
-Wire Wire Line
-	7650 1700 7250 1700
-Wire Wire Line
-	7250 1700 7250 1650
-Connection ~ 7250 1700
 Wire Notes Line
 	800  2700 800  1000
 Text Notes 800  1000 0    118  ~ 0
@@ -917,17 +876,6 @@ F 3 "~" H 850 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 9250 7000 9250
-$Comp
-L F24-100-C2:F24-100-C2 U6
-U 1 1 61AA4D6D
-P 1650 1550
-F 0 "U6" H 1725 1882 50  0000 C CNN
-F 1 "F24-100-C2" H 1725 1791 50  0000 C CNN
-F 2 "F24-100-C2:Transformer_Breve_TEZ-22x24" H 1650 1550 50  0001 C CNN
-F 3 "" H 1650 1550 50  0001 C CNN
-	1    1650 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 1650 1100 1650
 Wire Wire Line
@@ -936,8 +884,6 @@ Wire Wire Line
 	1050 2250 1100 2250
 Wire Wire Line
 	1050 2000 1050 2250
-Wire Wire Line
-	2350 2300 3300 2300
 Wire Wire Line
 	3300 1600 3600 1600
 Wire Wire Line
@@ -949,9 +895,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 1700 3600 1850
 Wire Wire Line
-	3300 1600 3300 2300
-Wire Wire Line
-	2350 2000 2350 1900
+	3300 1600 3300 1900
 $Comp
 L Connector:Conn_01x24_Male J7
 U 1 1 61B4488C
@@ -1295,20 +1239,38 @@ Wire Notes Line
 	8400 6350 10800 6350
 Wire Notes Line
 	8400 7900 10800 7900
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U8
+U 1 1 61C80020
+P 7550 1700
+F 0 "U8" H 7550 1942 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 7550 1851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7550 1900 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7650 1450 50  0001 C CNN
+	1    7550 1700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5600 3350 5850 3350
+	6750 2050 7550 2050
 Wire Wire Line
-	5750 3650 5750 3550
-Connection ~ 5750 3550
+	7550 2000 7550 2050
+Connection ~ 7550 2050
 Wire Wire Line
-	5750 3550 5850 3550
-Wire Notes Line
-	5100 5100 5100 6550
-Wire Notes Line
-	8200 5100 8200 6550
+	7550 2050 7950 2050
+Wire Wire Line
+	7950 1700 7850 1700
+Wire Wire Line
+	6750 1350 7150 1350
+Wire Wire Line
+	7250 1700 7150 1700
+Wire Wire Line
+	7150 1700 7150 1350
+Connection ~ 7150 1350
+Wire Wire Line
+	7150 1350 7950 1350
 $Comp
 L Connector:USB_B J2
-U 1 1 61BFAA57
+U 1 1 61D0D3AA
 P 5450 5600
 F 0 "J2" H 5507 6067 50  0000 C CNN
 F 1 "USB_B" H 5507 5976 50  0000 C CNN
@@ -1318,20 +1280,50 @@ F 3 " ~" H 5600 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
-U 1 1 61C39CC1
-P 5350 6300
-F 0 "R10" H 5420 6346 50  0000 L CNN
-F 1 "R" H 5420 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5280 6300 50  0001 C CNN
-F 3 "~" H 5350 6300 50  0001 C CNN
-	1    5350 6300
-	1    0    0    -1  
+L Device:R R4
+U 1 1 61D10C94
+P 5600 6250
+F 0 "R4" V 5393 6250 50  0000 C CNN
+F 1 "10" V 5484 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5530 6250 50  0001 C CNN
+F 3 "~" H 5600 6250 50  0001 C CNN
+	1    5600 6250
+	0    1    1    0   
 $EndComp
-Text GLabel 5800 6450 2    50   Input ~ 0
+Text GLabel 5800 6250 2    50   Input ~ 0
 VSS
 Wire Wire Line
-	5350 6150 5350 6000
+	5350 6000 5350 6250
 Wire Wire Line
-	5350 6450 5800 6450
+	5350 6250 5450 6250
+Wire Wire Line
+	5800 6250 5750 6250
+Wire Notes Line
+	5100 6400 8200 6400
+Wire Notes Line
+	8200 5100 8200 6400
+Wire Notes Line
+	5100 5100 5100 6400
+$Comp
+L F24-100-C2:F24-100-C2 U6
+U 1 1 61AA4D6D
+P 1650 1550
+F 0 "U6" H 1725 1882 50  0000 C CNN
+F 1 "F24-100-C2" H 1725 1791 50  0000 C CNN
+F 2 "F24-100-C2:Transformer_Breve_TEZ-22x24" H 1650 1550 50  0001 C CNN
+F 3 "" H 1650 1550 50  0001 C CNN
+	1    1650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1900 3300 1900
+NoConn ~ 2350 2000
+NoConn ~ 2350 2300
+Wire Wire Line
+	5600 3350 5850 3350
+Wire Wire Line
+	5750 3650 5750 3550
+Connection ~ 5750 3550
+Wire Wire Line
+	5750 3550 5850 3550
 $EndSCHEMATC
