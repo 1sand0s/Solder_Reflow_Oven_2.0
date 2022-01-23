@@ -6,7 +6,8 @@
 A homebrew solder reflow oven controller designed around an STM32L053 series MCU with PCB layouting done in Kicad. A solder reflow oven is a device used to 
 automatically solder SMD components. When dealing with integrated circuits designed to operate at high frequencies, their packages might not have leads solderable by
 hand (leads can add unwanted inductance). Therefore, the only way to solder them is by using a solder reflow oven.  
- 
+
+<img src="/Hardware/SolderReflow_Manufactured.jpg" width="800" height="600" /> 
  <img src="/Hardware/SolderReflow_3D.png" width="800" height="600" />
 
 <h2> How does it work ? </h2>
